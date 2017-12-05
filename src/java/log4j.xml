@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/Log4j/">
+    <appender name="TxtAppender" class="org.apache.Log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="Logs/Log.txt"/>
+        <layout class="org.apache.Log4j.SimpleLayout"/>
+    </appender>
+    <logger name="ua.velykyi">
+        <level value="debug"/>
+    </logger>
+    <root>
+        <appender-ref ref="TxtAppender" />
+    </root>
+</log4j:configuration>
+
+
